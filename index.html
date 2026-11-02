@@ -1,132 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Independent guides to adult platforms: features, subscriptions, privacy and safer online choices. Adults 18+ only.">
-  <meta name="theme-color" content="#111827">
-  <title>Adult Platform Guide | Independent 18+ Reviews</title>
-  <style>
-    :root { --bg:#0b1020; --panel:#151d31; --panel2:#1b2740; --text:#f4f6fb; --muted:#b7c1d5; --accent:#a78bfa; --accent2:#67e8f9; --line:#2d3a56; }
-    * { box-sizing:border-box; }
-    body { margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; background:linear-gradient(160deg,#0b1020,#111a2d 55%,#0b1020); color:var(--text); line-height:1.6; }
-    a { color:var(--accent2); }
-    .wrap { width:min(1080px,92%); margin:auto; }
-    header { padding:22px 0; border-bottom:1px solid var(--line); }
-    .nav { display:flex; justify-content:space-between; align-items:center; gap:18px; flex-wrap:wrap; }
-    .brand { font-weight:800; letter-spacing:.04em; color:white; text-decoration:none; }
-    .brand span { color:var(--accent); }
-    nav a { margin-left:18px; text-decoration:none; color:var(--muted); font-size:.95rem; }
-    .hero { padding:76px 0 54px; }
-    .eyebrow { color:var(--accent2); text-transform:uppercase; letter-spacing:.16em; font-size:.78rem; font-weight:700; }
-    h1 { font-size:clamp(2.3rem,6vw,4.5rem); line-height:1.05; max-width:800px; margin:14px 0 20px; }
-    .lead { color:var(--muted); font-size:1.15rem; max-width:700px; }
-    .pill { display:inline-block; border:1px solid #6d5bb3; color:#ddd4ff; padding:5px 11px; border-radius:99px; font-size:.82rem; margin:7px 6px 0 0; }
-    .notice { margin:22px 0 0; padding:14px 16px; background:#221d3b; border:1px solid #55458b; border-radius:12px; color:#e7e0ff; max-width:760px; font-size:.92rem; }
-    section { padding:38px 0; }
-    h2 { font-size:1.8rem; margin:0 0 10px; }
-    .sub { color:var(--muted); margin:0 0 22px; }
-    .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
-    .card { background:var(--panel); border:1px solid var(--line); border-radius:16px; padding:22px; }
-    .card h3 { margin:0 0 8px; font-size:1.2rem; }
-    .card p { color:var(--muted); margin:0 0 15px; }
-    .tag { color:#c4b5fd; font-size:.78rem; text-transform:uppercase; letter-spacing:.08em; font-weight:700; }
-    .btn { display:inline-block; background:var(--accent); color:#151128; font-weight:750; padding:10px 15px; border-radius:9px; text-decoration:none; }
-    .btn:hover { filter:brightness(1.08); }
-    .plain { color:var(--accent2); text-decoration:none; font-weight:650; }
-    .steps { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
-    .step { background:var(--panel2); border-radius:14px; padding:18px; border:1px solid var(--line); }
-    .num { color:var(--accent2); font-size:.8rem; font-weight:800; letter-spacing:.1em; }
-    .step h3 { margin:5px 0; }
-    .step p { color:var(--muted); margin:0; }
-    .disclosure { border-left:4px solid var(--accent); background:#171c30; padding:17px 20px; border-radius:8px; color:var(--muted); }
-    footer { border-top:1px solid var(--line); padding:28px 0 42px; color:var(--muted); font-size:.9rem; }
-    footer a { margin-right:14px; }
-    .small { font-size:.84rem; color:var(--muted); }
-    @media(max-width:760px) { .grid,.steps { grid-template-columns:1fr; } nav a { margin:0 12px 0 0; } .hero { padding:54px 0 35px; } }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Independent 18+ guides to adult platforms, pricing, privacy and safer online choices.">
+<meta name="theme-color" content="#09090f">
+<title>Adult Platform Guide — Independent 18+ Reviews</title>
+<style>
+:root{--bg:#09090f;--panel:#14141f;--text:#f6f4fb;--muted:#b7b2c6;--line:#302c40;--accent:#b69cff;--cyan:#78e5e8}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(ellipse at 75% 0%,#241b3c 0,transparent 38%),var(--bg);color:var(--text);font:16px/1.65 system-ui,Arial,sans-serif}
+a{color:var(--cyan)}
+.wrap{width:min(1100px,92%);margin:auto}
+header{border-bottom:1px solid var(--line);background:#09090f}
+.nav{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
+.brand{color:#fff;text-decoration:none;font-weight:900;letter-spacing:.06em}
+.brand span{color:var(--accent)}
+nav{display:flex;gap:18px;flex-wrap:wrap}
+nav a{text-decoration:none;color:var(--muted)}
+.hero{padding:75px 0 55px}
+.eyebrow{color:var(--cyan);font-size:.78rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase}
+h1{font-size:clamp(2.5rem,7vw,5rem);line-height:1.02;max-width:850px;margin:18px 0}
+.lead{font-size:1.18rem;color:var(--muted);max-width:720px}
+.pills{display:flex;gap:9px;flex-wrap:wrap;margin:25px 0}
+.pill{border:1px solid #51456d;background:#1b1728;color:#e4d9ff;border-radius:99px;padding:6px 12px;font-size:.82rem}
+.notice{max-width:780px;background:#211a32;border:1px solid #554575;border-radius:14px;padding:15px 18px;color:#e9e1fa}
+section{padding:45px 0}
+h2{font-size:2rem;margin:0 0 8px}
+.sub{color:var(--muted);margin:0 0 25px}
+.grid,.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
+.card,.step{background:#171624;border:1px solid var(--line);border-radius:18px;padding:23px}
+.card{min-height:220px;display:flex;flex-direction:column;align-items:flex-start}
+.tag,.num{color:var(--cyan);font-size:.76rem;font-weight:800;letter-spacing:.12em}
+.card h3,.step h3{margin:10px 0 7px}
+.card p,.step p{color:var(--muted)}
+.card a{margin-top:auto;text-decoration:none;font-weight:700}
+.disclosure{border-left:4px solid var(--accent);background:#171421;padding:18px 20px;border-radius:10px;color:var(--muted)}
+footer{border-top:1px solid var(--line);padding:30px 0 44px;color:var(--muted);font-size:.9rem}
+.small{font-size:.82rem}
+@media(max-width:760px){.grid,.steps{grid-template-columns:1fr}.hero{padding:50px 0 35px}.card{min-height:0}.nav{padding:12px 0}}
+</style>
 </head>
 <body>
-<header>
-  <div class="wrap nav">
-    <a class="brand" href="#">ADULT <span>PLATFORM GUIDE</span></a>
-    <nav aria-label="Main navigation">
-      <a href="#guides">Guides</a>
-      <a href="#how">How it works</a>
-      <a href="#disclosure">Disclosure</a>
-    </nav>
-  </div>
-</header>
-
+<header><div class="wrap nav">
+<a class="brand" href="#">ADULT <span>PLATFORM GUIDE</span></a>
+<nav>
+<a href="#guides">Guides</a>
+<a href="#checklist">Review checklist</a>
+<a href="#about">About</a>
+<a href="#disclosure">Disclosure</a>
+</nav>
+</div></header>
 <main>
-  <div class="wrap hero">
-    <div class="eyebrow">Independent information · Adults 18+</div>
-    <h1>Make informed choices about adult platforms.</h1>
-    <p class="lead">Clear, independent guides to platform features, subscription costs, privacy settings and cancellation policies — so adults can compare services before signing up.</p>
-    <div>
-      <span class="pill">18+ only</span>
-      <span class="pill">Privacy-focused</span>
-      <span class="pill">No explicit media</span>
-    </div>
-    <div class="notice"><strong>Adults only:</strong> This website is intended solely for people aged 18 or older. It does not host explicit images or videos. Leave this site if you are under 18.</div>
-  </div>
-
-  <section id="guides">
-    <div class="wrap">
-      <h2>Platform guides</h2>
-      <p class="sub">Starter comparison pages. Replace the sample buttons with your approved affiliate URLs only after a partner programme accepts your account and confirms that this traffic source is permitted.</p>
-      <div class="grid">
-        <article class="card">
-          <div class="tag">Guide 01 · Live platforms</div>
-          <h3>Live platform features</h3>
-          <p>Compare account options, public and private features, payment controls, privacy settings and account safety.</p>
-          <a class="plain" href="#how">Read the comparison checklist →</a>
-        </article>
-        <article class="card">
-          <div class="tag">Guide 02 · Subscriptions</div>
-          <h3>Understand subscription costs</h3>
-          <p>Check recurring billing, trial periods, renewal dates, cancellation steps and refund terms before paying.</p>
-          <a class="plain" href="#how">See what to check →</a>
-        </article>
-        <article class="card">
-          <div class="tag">Guide 03 · Privacy</div>
-          <h3>Protect your online privacy</h3>
-          <p>Review account visibility, payment descriptors, password security, two-factor authentication and data policies.</p>
-          <a class="plain" href="#how">View the safety checklist →</a>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section id="how">
-    <div class="wrap">
-      <h2>Our review checklist</h2>
-      <p class="sub">Use these points consistently when researching any service. Do not claim a feature or price unless you have verified it from the provider.</p>
-      <div class="steps">
-        <div class="step"><div class="num">01 / COST</div><h3>Pricing & billing</h3><p>List the current price, billing frequency, renewal terms, trial conditions and cancellation method.</p></div>
-        <div class="step"><div class="num">02 / PRIVACY</div><h3>Privacy & security</h3><p>Check the privacy policy, account controls, age checks, security options and data deletion process.</p></div>
-        <div class="step"><div class="num">03 / TERMS</div><h3>Rules & support</h3><p>Review geographic availability, platform rules, customer support and refund procedures.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="disclosure">
-    <div class="wrap">
-      <h2>Affiliate disclosure</h2>
-      <div class="disclosure">Some links on this website may be affiliate links. If you use one to register or make a purchase, we may receive a commission at no additional cost to you. Affiliate relationships do not guarantee a positive review. We aim to describe services accurately and disclose commercial relationships clearly.</div>
-      <p class="small">Before publishing affiliate links, confirm that the partner programme allows your website and social-media traffic, check the permitted countries and follow all applicable advertising, consumer-protection and platform rules.</p>
-    </div>
-  </section>
+<div class="wrap hero">
+<div class="eyebrow">Independent information · Adults 18+</div>
+<h1>Choose adult platforms with confidence.</h1>
+<p class="lead">Straightforward guides to features, subscription costs, privacy settings and cancellation policies — helping adults make informed decisions before they sign up.</p>
+<div class="pills">
+<span class="pill">18+ only</span>
+<span class="pill">Privacy-first</span>
+<span class="pill">Independent guides</span>
+<span class="pill">No explicit media</span>
+</div>
+<div class="notice"><strong>Adults only:</strong> This website is intended for people aged 18 or older. It does not host explicit images or videos. If you are under 18, please leave this site.</div>
+</div>
+<section id="guides"><div class="wrap">
+<h2>Explore our guides</h2>
+<p class="sub">Practical starting points for comparing online services.</p>
+<div class="grid">
+<article class="card">
+<div class="tag">01 · Platform basics</div>
+<h3>Features & account options</h3>
+<p>Understand account types, content controls, geographic availability, verification requirements and support options.</p>
+<a href="#checklist">What to compare →</a>
+</article>
+<article class="card">
+<div class="tag">02 · Payments</div>
+<h3>Subscriptions & billing</h3>
+<p>Check recurring charges, trial periods, renewal dates, cancellation steps, refunds and payment methods.</p>
+<a href="#checklist">Billing checklist →</a>
+</article>
+<article class="card">
+<div class="tag">03 · Online safety</div>
+<h3>Privacy & security</h3>
+<p>Learn about visibility settings, account security, two-factor authentication, data policies and deletion options.</p>
+<a href="#checklist">Safety checklist →</a>
+</article>
+</div></div></section>
+<section id="checklist"><div class="wrap">
+<h2>Our review checklist</h2>
+<p class="sub">We use the same criteria for every service so readers can make fair comparisons.</p>
+<div class="steps">
+<div class="step"><div class="num">01 / COST</div><h3>Transparent pricing</h3><p>Verify current prices, billing frequency, automatic renewal, trial conditions and cancellation process.</p></div>
+<div class="step"><div class="num">02 / PRIVACY</div><h3>Privacy & security</h3><p>Review the privacy policy, account controls, age checks, security features and data deletion process.</p></div>
+<div class="step"><div class="num">03 / SUPPORT</div><h3>Terms & assistance</h3><p>Check service terms, supported countries, customer support channels and refund procedures.</p></div>
+</div></div></section>
+<section id="about"><div class="wrap">
+<h2>About this guide</h2>
+<p class="sub">Adult Platform Guide is an independent informational project. We aim to make platform terms easier to understand. We are not affiliated with a service unless that relationship is clearly disclosed.</p>
+</div></section>
+<section id="disclosure"><div class="wrap">
+<h2>Affiliate disclosure</h2>
+<div class="disclosure">Some links may be affiliate links. If you register or make a purchase through them, we may earn a commission at no extra cost to you. Commercial relationships do not guarantee a positive review and will be disclosed clearly. Partner links will be added only after programme approval.</div>
+</div></section>
 </main>
-
-<footer>
-  <div class="wrap">
-    <p><strong>Adult Platform Guide</strong> · Independent information for adults 18+.</p>
-    <p>This site is informational and is not affiliated with any platform unless explicitly stated.</p>
-    <p><a href="mailto:YOUR_CONTACT_EMAIL">Contact</a> <a href="privacy.html">Privacy notice (template needed before collecting personal data)</a></p>
-    <p class="small">© <span id="year"></span> Adult Platform Guide. All rights reserved.</p>
-  </div>
-</footer>
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<footer><div class="wrap">
+<p><strong>Adult Platform Guide</strong> · Independent information for adults 18+.</p>
+<p>Contact: <a href="mailto:sbslava@gmail.com">sbslava@gmail.com</a></p>
+<p class="small">© <span id="year"></span> Adult Platform Guide. All rights reserved.</p>
+</div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
 </body>
 </html>
